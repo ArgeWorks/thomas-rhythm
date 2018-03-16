@@ -205,13 +205,40 @@ blockquote span,
 }
 .about-team .team-workers-img {
     margin-bottom: 28px;
+    position: relative;
 }
 .about-team .team-workers-img img {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
+.about-team .team-workers-skills {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    background-color: #000;
+    transition: all .3s linear;
+    opacity: 0;
+}
+.about-team .team-workers-skills span {
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: .3em;
+    margin-bottom: 30px;
+}
+.about-team .team-workers-skills p {
+    font-size: 13px;
+    line-height: 1.6153;
+    color: rgba(255, 255, 255, .5);
+    margin-bottom: 45px;
+}
+.about-team .team-workers-img:hover .team-workers-skills {
+    opacity: 100;
+}
 .about-team .team-workers-info span {
     display: block;
+    font-family: 'Dosis', sans-serif;
     text-transform: uppercase;
     letter-spacing: .4em;
     font-weight: 400;
@@ -223,7 +250,6 @@ blockquote span,
 .about-team .team-workers-role {
     font-size: 12px;
 }
-
 /* ----- about team end ----- */
 
 /* ===== CUSTOM STYLES END ===== */
