@@ -207,7 +207,7 @@ blockquote span,
     margin-bottom: 28px;
     position: relative;
 }
-.about-team .team-workers-img img {
+.about-team .team-workers-img {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
@@ -268,7 +268,41 @@ blockquote span,
     margin-top: 80px;
 }
 /* ----- why choose us end ----- */
-
+/* ----- latest news start ----- */
+.latest-news .section-title a {
+    float: right;
+    font-size: 11px;
+    color: #999;
+    line-height: 18px;
+}
+.latest-news .news-items .news-img {
+    display: inline-block;
+    margin-bottom: 30px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: all .3s linear;
+}
+.latest-news .news-items .news-img:hover {
+    -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0);
+}
+.latest-news .news-items .news-title {
+    display: block;
+    font-size: 15px;
+    letter-spacing: .2em;
+    margin-bottom: 15px;
+}
+.latest-news .news-items .news-date {
+    display: block;
+    font-size: 11px;
+    color: #999;
+    letter-spacing: .4em;
+    margin-bottom: 25px;
+}
+.latest-news .news-items p {
+    margin-bottom: 30px;
+}
+/* ----- latest news end ----- */
 /* ===== CUSTOM STYLES END ===== */
 
 
