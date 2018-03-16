@@ -251,6 +251,23 @@ blockquote span,
     font-size: 12px;
 }
 /* ----- about team end ----- */
+/* ----- why choose us start ----- */
+.why-choose-us .why-choose-items i {
+    display: block;
+    font-size: 48px;
+    margin-bottom: 35px;
+}
+.why-choose-us .why-choose-items span {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .4em;
+    margin-bottom: 35px;
+}
+.why-choose-us .why-choose-items + .why-choose-items {
+    margin-top: 80px;
+}
+/* ----- why choose us end ----- */
 
 /* ===== CUSTOM STYLES END ===== */
 
