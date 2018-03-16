@@ -1,198 +1,231 @@
 /* ===== RESET START ===== */
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 body {
-	margin: 0;
-	color: #777;
-	background-color: #fff;
-	font: 300 15px/1 'Open Sans', sans-serif;
+    margin: 0;
+    color: #777;
+    background-color: #fff;
+    font: 300 15px/1 'Open Sans', sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
-	margin: 0;
-	font-weight: normal;
+    margin: 0;
+    font-weight: normal;
 }
 p {
-	margin: 0;
+    margin: 0;
 }
 a {
-	color: inherit;
-	text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 a:hover, a:active {
-	text-decoration: none;
+    text-decoration: none;
 }
 ul, ol {
-	padding: 0;
-	margin: 0;
-	list-style: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 img {
-	max-width: 100%;
+    max-width: 100%;
 }
 button {
-	cursor: pointer;
-	border: none;
-	outline: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
 /* ===== RESET END ===== */
 /* ===== DEFAULT CLASSES START ===== */
 .overflow-hidden {
-	overflow: hidden;
+    overflow: hidden;
 }
 .text-center {
-	text-align: center;
+    text-align: center;
 }
 .text-right {
-	text-align: right;
+    text-align: right;
 }
 .text-justify {
-	text-align: justify;
+    text-align: justify;
 }
 .text-uppercase {
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
 .bg-gray {
-	background: #f8f8f8;
+    background: #f8f8f8;
 }
 .bg-black {
-	background: #111;
+    background: #111;
 }
 /* ===== DEFAULT CLASSES END ===== */
 /* ===== DEFAULT COMPONENTS START ===== */
 .default-section {
-	padding: 135px 0;
+    padding: 135px 0;
 }
 .small-section {
-	padding: 70px 0;
+    padding: 70px 0;
 }
 .container {
-	max-width: 1200px;
-	padding: 0 15px;
-	margin: auto;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: auto;
 }
 .container-fluid {
-	padding: 0 15px;
+    padding: 0 15px;
 }
 .title {
-	color: #111;
-	font-family: 'Dosis', sans-serif;
-	text-transform: uppercase;
+    color: #111;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
 }
 .title.title-white {
-	color: #fff;
+    color: #fff;
 }
 .title.section-title {
-	font-size: 18px;
-	letter-spacing: 0.5em;
-	margin-bottom: 75px;
+    font-size: 18px;
+    letter-spacing: 0.5em;
+    margin-bottom: 75px;
 }
 .title.section-title-light {
-	font-size: 18px;
-	letter-spacing: 3em;
-	margin-bottom: 20px;
-	font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 3em;
+    margin-bottom: 20px;
+    font-weight: 300;
 }
 .default-text {
-	font-size: 15px;
-	line-height: 1.7333;
-	font-weight: 300;
+    font-size: 15px;
+    line-height: 1.7333;
+    font-weight: 300;
 }
 blockquote,
 .blockquote {
-	font-size: 24px;
-	font-weight: 300;
-	line-height: 1.6;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 30px;
 }
 blockquote span,
 .blockquote span {
-	font-size: 11px;
-	text-transform: uppercase;
-	letter-spacing: .2em;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .2em;
 }
 .btn {
-	display: inline-block;
-	padding: 12px 20px;
-	border-radius: 2px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 12px;
-	font-weight: 400;
-	text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 2px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 .btn.btn-default {
-	color: #777;
-	background-color: #e5e5e5;
-	letter-spacing: .2em;
+    color: #777;
+    background-color: #e5e5e5;
+    letter-spacing: .2em;
 }
 .btn.btn-default:hover {
-	background-color: #fafafa;
+    background-color: #fafafa;
 }
 .btn.btn-black {
-	color: #fff;
-	background-color: #323232;
+    color: #fff;
+    background-color: #323232;
 }
 .btn.btn-black:hover {
-	background-color: #000;
+    background-color: #000;
 }
 .btn.btn-sm {
-	padding: 7px 15px;
-	font-size: 11px;
+    padding: 7px 15px;
+    font-size: 11px;
 }
 .header {
-	padding: 27px 0;
-	position: fixed;
-	width: 100%;
-	top: 0;
-	z-index: 99;
+    padding: 27px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
 }
 .header .header-logo {
-	float: left;
+    float: left;
 }
 .header .header-nav {
-	color: rgba(255, 255, 255, .75);
-	font-size: 11px;
-	font-weight: 400;
-	letter-spacing: .3em;
-	float: right;
-	line-height: 23px;
+    color: rgba(255, 255, 255, .75);
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: .3em;
+    float: right;
+    line-height: 23px;
 }
 .header .header-nav li {
-	float: left;
+    float: left;
 }
 .header .header-nav li + li {
-	margin-left: 32px;
+    margin-left: 32px;
 }
 /* ===== DEFAULT COMPONENTS END ===== */
 /* ===== CUSTOM STYLES START ===== */
+/* ----- inner start ----- */
 .inner {
-	padding-top: 77px;
-	height: 100vh;
-	background: url('../img/inner-bg.jpg') no-repeat center / cover;
+    padding-top: 77px;
+    height: 100vh;
+    background: url('../img/inner-bg.jpg') no-repeat center / cover;
 }
 .inner::before {
-	content: '';
-	display: inline-block;
-	height: 100%;
-	vertical-align: middle;
-	margin-left: -4px;
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-left: -4px;
 }
 .inner-content {
-	display: inline-block;
-	vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
 }
 .inner-content h1 {
-	font-family: 'Dosis', sans-serif;
-	font-size: 30px;
-	font-weight: 400;
-	text-transform: uppercase;
-	letter-spacing: 1.7em;
-	margin-bottom: 95px;
-	color: rgba(255, 255, 255, .9);
+    font-family: 'Dosis', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.7em;
+    margin-bottom: 95px;
+    color: rgba(255, 255, 255, .9);
 }
 .inner-content span {
-	font-size: 19px;
-	color: rgba(255, 255, 255, .68);
+    font-size: 19px;
+    color: rgba(255, 255, 255, .68);
 }
+/* ----- inner end ----- */
+/* ----- about team start ----- */
+.about-team {
+    border-bottom: 1px solid #ececec;
+}
+.about-team .team-description {
+    margin-bottom: 100px;
+}
+.about-team .team-workers-img {
+    margin-bottom: 28px;
+}
+.about-team .team-workers-img img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.about-team .team-workers-info span {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    font-weight: 400;
+}
+.about-team .team-workers-name {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+.about-team .team-workers-role {
+    font-size: 12px;
+}
+
+/* ----- about team end ----- */
+
 /* ===== CUSTOM STYLES END ===== */
 
 
