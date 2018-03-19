@@ -36,6 +36,7 @@ button {
     outline: none;
 }
 /* ===== RESET END ===== */
+
 /* ===== DEFAULT CLASSES START ===== */
 .overflow-hidden {
     overflow: hidden;
@@ -59,6 +60,7 @@ button {
     background: #111;
 }
 /* ===== DEFAULT CLASSES END ===== */
+
 /* ===== DEFAULT COMPONENTS START ===== */
 .default-section {
     padding: 135px 0;
@@ -89,7 +91,7 @@ button {
 }
 .title.section-title-light {
     font-size: 18px;
-    letter-spacing: 3em;
+    letter-spacing: .3em;
     margin-bottom: 20px;
     font-weight: 300;
 }
@@ -126,18 +128,21 @@ blockquote span,
     letter-spacing: .2em;
 }
 .btn.btn-default:hover {
-    background-color: #fafafa;
+    background-color: #f0f0f0;
 }
 .btn.btn-black {
     color: #fff;
     background-color: #323232;
 }
 .btn.btn-black:hover {
-    background-color: #000;
+    background-color: #474747;
 }
 .btn.btn-sm {
     padding: 7px 15px;
     font-size: 11px;
+}
+.et-icon {
+    font-size: 48px;
 }
 .header {
     padding: 27px 0;
@@ -164,6 +169,7 @@ blockquote span,
     margin-left: 32px;
 }
 /* ===== DEFAULT COMPONENTS END ===== */
+
 /* ===== CUSTOM STYLES START ===== */
 /* ----- inner start ----- */
 .inner {
@@ -197,6 +203,7 @@ blockquote span,
     color: rgba(255, 255, 255, .68);
 }
 /* ----- inner end ----- */
+
 /* ----- about team start ----- */
 .about-team {
     border-bottom: 1px solid #ececec;
@@ -252,10 +259,10 @@ blockquote span,
     font-size: 12px;
 }
 /* ----- about team end ----- */
+
 /* ----- why choose us start ----- */
 .why-choose-us .why-choose-items i {
     display: block;
-    font-size: 48px;
     margin-bottom: 35px;
 }
 .why-choose-us .why-choose-items span {
@@ -265,10 +272,11 @@ blockquote span,
     letter-spacing: .4em;
     margin-bottom: 35px;
 }
-.why-choose-us .why-choose-items + .why-choose-items {
+.why-choose-us .row + .row {
     margin-top: 80px;
 }
 /* ----- why choose us end ----- */
+
 /* ----- latest news start ----- */
 .latest-news .section-title a {
     float: right;
