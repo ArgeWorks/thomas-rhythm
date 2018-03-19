@@ -158,6 +158,14 @@ textarea.form-control {
     min-height: 82px;
     padding-top: 9px;
 }
+.form-info {
+    font-size: 11px;
+    color: #aaa;
+    font-weight: 400;
+}
+.form-info .fa {
+    font-size: 12px;
+}
 .btn {
     display: inline-block;
     padding: 12px 20px;
@@ -362,6 +370,16 @@ textarea.form-control {
     margin-bottom: 30px;
 }
 /* ----- latest news end ----- */
+
+/* ----- subscribe start ----- */
+.subscribe form .form-control {
+    max-width: 290px;
+}
+.subscribe .form-info {
+    margin-top: 18px;
+}
+/* ----- subscribe end ----- */
+
 /* ===== CUSTOM STYLES END ===== */
 
 
