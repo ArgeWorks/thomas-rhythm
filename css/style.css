@@ -168,7 +168,7 @@ textarea.form-control {
 }
 .btn {
     display: inline-block;
-    padding: 12px 20px;
+    padding: 12px 25px;
     border-radius: 2px;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
@@ -317,6 +317,19 @@ textarea.form-control {
     font-size: 12px;
 }
 /* ----- about team end ----- */
+
+/* ----- lets talk start ----- */
+.lets-talk-content {
+    padding: 140px 0;
+}
+.lets-talk-content p {
+    color: rgba(255, 255, 255, .7);
+    margin-bottom: 40px;
+}
+.lets-talk-img {
+    margin-top: -32px;
+}
+/* ----- lets talk end ----- */
 
 /* ----- why choose us start ----- */
 .why-choose-us .why-choose-items i {
