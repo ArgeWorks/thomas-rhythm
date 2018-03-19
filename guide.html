@@ -28,6 +28,15 @@
         .fa {
             font-size: 48px;
         }
+        .row {
+            margin-bottom: 50px;
+        }
+        .form-control {
+            margin-bottom: 10px;
+        }
+        .btn + .btn {
+            margin-left: 5px;
+        }
     </style>
 </head>
 <body>
@@ -110,8 +119,85 @@
     </div>
     <!-- GRID LAYOUT -->
     <div class="default-section bg-gray">
-        <div class="title section-title">
-            <span>Default grid</span>
+        <div class="container">
+            <div class="title section-title text-center">
+                <span>Default grid</span>
+            </div>
+            <div class="title section-title-light text-center">
+                <span>2 cols and text uppercase</span>
+            </div>
+            <!-- 2 COLS -->
+            <div class="row">
+                <div class="col col-6">
+                    <p class="default-text text-uppercase">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, asperiores rem, adipisci animi saepe provident in obcaecati ratione sunt delectus error nihil nisi autem a eius dolore blanditiis odit vel?</p>
+                </div>
+                <div class="col col-6">
+                    <p class="default-text text-uppercase">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, asperiores rem, adipisci animi saepe provident in obcaecati ratione sunt delectus error nihil nisi autem a eius dolore blanditiis odit vel?</p>
+                </div>
+            </div>
+            <div class="title section-title-light text-center">
+                <span>3 cols</span>
+            </div>
+            <!-- 3 COLS -->
+            <div class="row">
+                <div class="col col-4">
+                    <p class="blockquote">
+                        Design is not making beauty, beauty emerges from selection, affinities, integration, love.
+                    </p>
+                    <span>— Louis Kahn</span>
+                </div>
+                <div class="col col-4">
+                    <p class="default-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, voluptatibus accusantium. Perspiciatis possimus quibusdam tempore, laudantium culpa repudiandae aliquid similique odit molestias accusantium veritatis facere, placeat perferendis. Dolore, suscipit temporibus.
+                    </p>
+                </div>
+                <div class="col col-4">
+                    <p class="default-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, voluptatibus accusantium. Perspiciatis possimus quibusdam tempore, laudantium culpa repudiandae aliquid similique odit molestias accusantium veritatis facere, placeat perferendis. Dolore, suscipit temporibus.
+                    </p>
+                </div>
+            </div>
+            <div class="title section-title-light text-center">
+                <span>4 cols</span>
+            </div>
+            <!-- 4 COLS -->
+            <div class="row">
+                <div class="col col-3">
+                    <p class="default-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nemo quis sit quisquam rerum aut placeat labore exercitationem eum id quas neque voluptas commodi quasi nam, numquam deserunt nesciunt ut.</p>
+                </div>
+                <div class="col col-3">
+                    <p class="default-text">Incidunt pariatur repudiandae dicta consectetur, cum debitis. Itaque, unde beatae illo, iusto quas, minus vitae qui consectetur facere odio molestias iste sint natus praesentium minima amet ex tenetur placeat quae?</p>
+                </div>
+                <div class="col col-3">
+                    <p class="default-text">Quibusdam, provident. Nihil omnis aspernatur blanditiis eum harum, quaerat ratione, perferendis ipsum, accusamus sint fugit minus! Voluptatibus id at aliquid atque quaerat, accusantium modi. Quam nesciunt at doloremque sit distinctio?</p>
+                </div>
+                <div class="col col-3">
+                    <p class="default-text">Iusto ipsa consequuntur perspiciatis nobis facere maiores adipisci accusantium molestiae asperiores iure. Veniam sapiente veritatis, nesciunt cum porro, nobis quaerat sunt rerum reprehenderit asperiores eligendi necessitatibus, consectetur sed nemo et.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FORM ELEMENTS -->
+    <div class="default-section">
+        <div class="container">
+            <div class="title section-title">
+                <span>Form elements</span>
+            </div>
+            <div class="row">
+                <div class="col col-6">
+                    <form>
+                        <input type="text" name="name" placeholder="Name" class="form-control">
+                        <input type="email" name="email" placeholder="Email" class="form-control">
+                        <textarea name="message" placeholder="Message" class="form-control"></textarea>
+                        <input type="tel" name="tel" placeholder="Telephone" value="+380977777777" class="form-control">
+                        <input type="password" name="password" placeholder="Password" class="form-control error">
+                        <input type="text" name="city" placeholder="Disabled" class="form-control" disabled>
+                        <input type="submit" value="Send" class="btn btn-default">
+                        <a href="#" class="btn btn-default btn-black">Send Message</a>
+                        <a href="#" class="btn btn-default btn-black" disabled>Disabled button</a>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </body>
