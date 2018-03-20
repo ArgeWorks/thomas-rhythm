@@ -73,6 +73,11 @@ button {
 .bg-black {
     background: #111;
 }
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
 /* ===== DEFAULT CLASSES END ===== */
 
 /* ===== DEFAULT COMPONENTS START ===== */
@@ -93,6 +98,7 @@ button {
 .title {
     color: #111;
     font-family: 'Dosis', sans-serif;
+    font-weight: 400;
     text-transform: uppercase;
 }
 .title.title-white {
@@ -100,7 +106,7 @@ button {
 }
 .title.section-title {
     font-size: 18px;
-    letter-spacing: 0.5em;
+    letter-spacing: .5em;
     margin-bottom: 75px;
 }
 .title.section-title-light {
@@ -200,6 +206,7 @@ textarea.form-control {
     font-size: 11px;
 }
 .et-icon {
+    display: block;
     font-size: 48px;
 }
 .header {
@@ -318,6 +325,34 @@ textarea.form-control {
 }
 /* ----- about team end ----- */
 
+/* ----- services start ----- */
+.tabs-nav {
+    margin-bottom: 75px;
+}
+.services .tabs-nav li {
+    width: 20%;
+    float: left;
+    color: rgba(12, 12, 12, .5)
+}
+.services .tabs-nav a {
+    display: inline-block;
+}
+.services .tabs-nav .et-icon {
+    margin-bottom: 32px;
+}
+
+.services .tabs-nav .ui-state-active {
+    color: #111;
+}
+.services .tabs-nav .tab-name {
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+}
+/* ----- services end ----- */
+
 /* ----- lets talk start ----- */
 .lets-talk-content {
     padding: 140px 0;
@@ -332,11 +367,10 @@ textarea.form-control {
 /* ----- lets talk end ----- */
 
 /* ----- why choose us start ----- */
-.why-choose-us .why-choose-items i {
-    display: block;
-    margin-bottom: 35px;
+.why-choose-items .et-icon {
+    margin-bottom: 32px;
 }
-.why-choose-us .why-choose-items span {
+.why-choose-items span {
     display: block;
     font-size: 14px;
     font-weight: 400;
