@@ -19,6 +19,7 @@ p {
     margin: 0;
 }
 a {
+    cursor: pointer;
     color: inherit;
     text-decoration: none;
 }
@@ -340,7 +341,6 @@ textarea.form-control {
 .services .tabs-nav .et-icon {
     margin-bottom: 32px;
 }
-
 .services .tabs-nav .ui-state-active {
     color: #111;
 }
@@ -365,6 +365,49 @@ textarea.form-control {
     margin-top: -32px;
 }
 /* ----- lets talk end ----- */
+
+/* ----- portfolio start ----- */
+.portfolio {
+    padding-top: 135px;
+}
+.portfolio .tabs-nav {
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.portfolio .tabs-nav li {
+    float: left;
+    color: rgba(12, 12, 12, .5)
+}
+.portfolio .tabs-nav li + li {
+    margin-left: 70px;
+}
+.portfolio .tabs-nav .tab-name {
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+}
+.portfolio .tabs-nav .ui-state-active {
+    color: #111;
+}
+.portfolio .tab-items-img {
+    float: left;
+    padding: 4px;
+    width: 33.3333333%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: all .3s linear;
+}
+.portfolio .tab-items-img:hover {
+    -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0);
+}
+.portfolio .tab-items-img img {
+    width: 100%;
+}
+/* ----- portfolio end ----- */
 
 /* ----- why choose us start ----- */
 .why-choose-items .et-icon {
