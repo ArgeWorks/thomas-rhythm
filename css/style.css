@@ -206,9 +206,10 @@ textarea.form-control {
     padding: 7px 15px;
     font-size: 11px;
 }
-.et-icon {
+.item-icon {
     display: block;
     font-size: 48px;
+    margin-bottom: 32px;
 }
 .header {
     padding: 27px 0;
@@ -338,9 +339,6 @@ textarea.form-control {
 .services .tabs-nav a {
     display: inline-block;
 }
-.services .tabs-nav .et-icon {
-    margin-bottom: 32px;
-}
 .services .tabs-nav .ui-state-active {
     color: #111;
 }
@@ -410,9 +408,6 @@ textarea.form-control {
 /* ----- portfolio end ----- */
 
 /* ----- why choose us start ----- */
-.why-choose-items .et-icon {
-    margin-bottom: 32px;
-}
 .why-choose-items span {
     display: block;
     font-size: 14px;
