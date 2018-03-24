@@ -567,6 +567,33 @@ textarea.form-control {
 }
 /* --- SUBSCRIBE END --- */
 
+/* --- FOOTER START --- */
+.footer {
+    padding-top: 140px;
+    padding-bottom: 60px;
+}
+/* --- FOOTER END --- */
+
+/* --- TOP CONTROL START --- */
+.top-control {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    color: #c6c6c6;
+    font-size: 48px;
+}
+.top-control a {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    line-height: 40px;
+    transition: all .2s linear;
+}
+.top-control a:hover {
+    color: #272727;
+}
+/* --- TOP CONTROL END --- */
+
 /* ===== CUSTOM STYLES END ===== */
 
 
