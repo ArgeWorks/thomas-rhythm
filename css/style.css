@@ -194,7 +194,7 @@ textarea.form-control {
     letter-spacing: .2em;
 }
 .btn.btn-default:hover {
-    background-color: #f0f0f0;
+    background-color: #d1d1d1;
 }
 .btn.btn-black {
     color: #fff;
@@ -211,6 +211,12 @@ textarea.form-control {
     display: block;
     font-size: 48px;
     margin-bottom: 32px;
+}
+a, 
+input, 
+textarea, 
+button {
+    transition: all .15s linear;
 }
 .header {
     padding: 27px 0;
@@ -572,6 +578,51 @@ textarea.form-control {
     padding-top: 140px;
     padding-bottom: 60px;
 }
+.footer-img {
+    display: inline-block;
+    margin-bottom: 24px;
+}
+.footer-socials-nav {
+    padding: 5px 0;
+    margin-bottom: 110px;
+}
+.footer-socials-nav li {
+    display: inline-block;
+    margin: 0 7px;
+}
+.footer-socials-nav a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    color: #111;
+    line-height: 22px;
+    border: 1px solid #111;
+    border-radius: 3px;
+    transform: rotate(45deg);
+}
+.footer-socials-nav a:hover {
+    color: #f8f8f8;
+    background-color: #111;
+}
+.footer-socials-nav i {
+    transform: rotate(-45deg);
+}
+.footer-copirates {
+    font-weight: 400;
+}
+.footer-copirates a {
+    display: block;
+    font-family: 'Dosis', sans-serif;
+    font-size: 12px;
+    letter-spacing: .5em;
+    text-transform: uppercase;
+    color: #111;
+    margin-bottom: 15px;
+}
+.footer-copirates span {
+    font-size: 11px;
+    color: #999;
+}
 /* --- FOOTER END --- */
 
 /* --- TOP CONTROL START --- */
@@ -587,7 +638,6 @@ textarea.form-control {
     width: 48px;
     height: 48px;
     line-height: 40px;
-    transition: all .2s linear;
 }
 .top-control a:hover {
     color: #272727;
