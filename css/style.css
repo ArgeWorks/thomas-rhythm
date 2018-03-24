@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     font-weight: normal;
 }
-p {
+p, blockquote {
     margin: 0;
 }
 a {
@@ -112,9 +112,9 @@ button {
 }
 .title.section-title-light {
     font-size: 18px;
+    font-weight: 300;
     letter-spacing: .3em;
     margin-bottom: 20px;
-    font-weight: 300;
 }
 .default-text {
     font-size: 15px;
@@ -131,6 +131,7 @@ blockquote,
 blockquote span,
 .blockquote span {
     font-size: 11px;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: .2em;
 }
@@ -206,7 +207,7 @@ textarea.form-control {
     padding: 7px 15px;
     font-size: 11px;
 }
-.item-icon {
+.icon {
     display: block;
     font-size: 48px;
     margin-bottom: 32px;
@@ -238,7 +239,7 @@ textarea.form-control {
 /* ===== DEFAULT COMPONENTS END ===== */
 
 /* ===== CUSTOM STYLES START ===== */
-/* ----- inner start ----- */
+/* --- INNER START --- */
 .inner {
     padding-top: 77px;
     height: 100vh;
@@ -269,9 +270,9 @@ textarea.form-control {
     font-size: 19px;
     color: rgba(255, 255, 255, .68);
 }
-/* ----- inner end ----- */
+/* --- INNER END --- */
 
-/* ----- about team start ----- */
+/* --- ABOUT TEAM START --- */
 .about-team {
     border-bottom: 1px solid #ececec;
 }
@@ -325,9 +326,9 @@ textarea.form-control {
 .about-team .team-workers-role {
     font-size: 12px;
 }
-/* ----- about team end ----- */
+/* --- ABOUT TEAM END --- */
 
-/* ----- services start ----- */
+/* --- SERVICES START --- */
 .tabs-nav {
     margin-bottom: 75px;
 }
@@ -349,9 +350,9 @@ textarea.form-control {
     text-transform: uppercase;
     letter-spacing: .4em;
 }
-/* ----- services end ----- */
+/* --- SERVICES END --- */
 
-/* ----- lets talk start ----- */
+/* --- LETS TALK START --- */
 .lets-talk-content {
     padding: 140px 0;
 }
@@ -362,9 +363,9 @@ textarea.form-control {
 .lets-talk-img {
     margin-top: -32px;
 }
-/* ----- lets talk end ----- */
+/* --- LETS TALK END --- */
 
-/* ----- portfolio start ----- */
+/* --- PORTFOLIO START --- */
 .portfolio {
     padding-top: 135px;
 }
@@ -404,9 +405,9 @@ textarea.form-control {
 .portfolio .tab-items-img img {
     width: 100%;
 }
-/* ----- portfolio end ----- */
+/* --- PORTFOLIO END --- */
 
-/* ----- why choose us start ----- */
+/* --- WHY CHOOSE US START --- */
 .why-choose-items span {
     display: block;
     font-size: 14px;
@@ -417,9 +418,111 @@ textarea.form-control {
 .why-choose-us .row + .row {
     margin-top: 80px;
 }
-/* ----- why choose us end ----- */
+/* --- WHY CHOOSE US END --- */
 
-/* ----- latest news start ----- */
+/* --- REVIEWS START --- */
+.reviews {
+    position: relative;
+}
+.reviews-title {
+    margin-bottom: 40px;
+}
+.reviews-title i {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 22px;
+}
+.reviews-slider {
+    position: static;
+}
+.reviews-slider .slide-content blockquote,
+.reviews-slider .slide-content .blockquote {
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, .75);
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.reviews-slider .slide-content blockquote span,
+.reviews-slider .slide-content .blockquote span {
+    color: rgba(255, 255, 255, .3);
+}
+.reviews-slider .slick-arrow {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 90px;
+    z-index: 1;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+.reviews-slider .slick-arrow:hover {
+    background-color: rgba(255, 255, 255, .1);
+}
+.reviews-slider .slick-arrow.slick-prev {
+    left: 0;
+}
+.reviews-slider .slick-arrow.slick-next {
+    right: 0;
+}
+.reviews-slider .carousel-button {
+    position: absolute;
+    top: 50%;
+    margin-top: -32px;
+    width: 64px;
+    height: 64px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+.reviews-slider .carousel-button i {
+    position: absolute;
+    top: 14px;
+}
+.reviews-slider .slick-prev .carousel-button {
+    transform: rotate(45deg);
+    margin-left: -32px;
+}
+.reviews-slider .slick-prev .carousel-button i {
+    right: 15px;
+    transform: rotate(-45deg);
+}
+.reviews-slider .slick-next .carousel-button {
+    right: 0;
+    transform: rotate(-45deg);
+    margin-right: -32px;
+}
+.reviews-slider .slick-next .carousel-button i {
+    left: 15px;
+    transform: rotate(45deg);
+}
+.reviews-slider .slick-dots {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 30px;
+    line-height: 0;
+}
+.reviews-slider .slick-dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .8);
+    cursor: pointer;
+}
+.reviews-slider .slick-dots li.slick-active {
+    border-color: rgba(255, 255, 255, .8);
+    background-color: #000;
+}
+.reviews-slider .slick-dots li + li {
+    margin-left: 5px;
+}
+.reviews-slider .slick-dots li button {
+    font-size: 0;
+}
+/* --- REVIEWS END --- */
+
+/* --- LATEST NEWS START --- */
 .latest-news .section-title a {
     float: right;
     font-size: 11px;
@@ -453,16 +556,16 @@ textarea.form-control {
 .latest-news .news-items p {
     margin-bottom: 30px;
 }
-/* ----- latest news end ----- */
+/* --- LATEST NEWS END --- */
 
-/* ----- subscribe start ----- */
+/* --- SUBSCRIBE START --- */
 .subscribe form .form-control {
     max-width: 290px;
 }
 .subscribe .form-info {
     margin-top: 18px;
 }
-/* ----- subscribe end ----- */
+/* --- SUBSCRIBE END --- */
 
 /* ===== CUSTOM STYLES END ===== */
 
