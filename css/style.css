@@ -74,6 +74,11 @@ button {
 .bg-black {
     background: #111;
 }
+.m-auto {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
 .clearfix::after {
     display: block;
     content: "";
@@ -87,6 +92,10 @@ button {
 }
 .small-section {
     padding: 70px 0;
+}
+.default-section.border-bottom,
+.small-section.border-bottom {
+    border-bottom: 1px solid #ececec;
 }
 .container {
     max-width: 1200px;
@@ -212,6 +221,42 @@ textarea.form-control {
     font-size: 48px;
     margin-bottom: 32px;
 }
+.rhomb-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 3px;
+    transform: rotate(45deg);
+}
+.rhomb-icon * {
+    transform: rotate(-45deg);
+}
+.rhomb-icon.icon-lg {
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+}
+.rhomb-icon.icon-sm {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+.rhomb-icon.icon-transparent {
+    background-color: transparent;
+    border: 1px solid #111;
+    color: #111;
+}
+.rhomb-icon.icon-black {
+    background-color: #111;
+    color: #f8f8f8;
+}
+.rhomb-icon.icon-white {
+    background-color: #f8f8f8;
+    color: #111;
+}
 a, 
 input, 
 textarea, 
@@ -279,10 +324,7 @@ button {
 /* --- INNER END --- */
 
 /* --- ABOUT TEAM START --- */
-.about-team {
-    border-bottom: 1px solid #ececec;
-}
-.about-team .team-description {
+.about-team .team-description-wrapper {
     margin-bottom: 100px;
 }
 .about-team .team-workers-img {
@@ -414,7 +456,7 @@ button {
 /* --- PORTFOLIO END --- */
 
 /* --- WHY CHOOSE US START --- */
-.why-choose-items span {
+.why-choose-items-wrapper span {
     display: block;
     font-size: 14px;
     font-weight: 400;
@@ -573,6 +615,30 @@ button {
 }
 /* --- SUBSCRIBE END --- */
 
+/* --- CONTACT START --- */
+.contact-item-content {
+    display: inline-block;
+    margin-left: 14px;
+    vertical-align: middle;
+}
+.contact-item-content span {
+    display: block;
+}
+.contact-item-content span + span {
+    margin-top: 10px;
+}
+.contact-item-content .contact-title {
+    font-family: 'Dosis', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+}
+.contact-item-content .contact-info {
+    font-size: 15px;
+}
+/* --- CONTACT END --- */
+
 /* --- FOOTER START --- */
 .footer {
     padding-top: 140px;
@@ -590,22 +656,9 @@ button {
     display: inline-block;
     margin: 0 7px;
 }
-.footer-socials-nav a {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    color: #111;
-    line-height: 22px;
-    border: 1px solid #111;
-    border-radius: 3px;
-    transform: rotate(45deg);
-}
 .footer-socials-nav a:hover {
     color: #f8f8f8;
     background-color: #111;
-}
-.footer-socials-nav i {
-    transform: rotate(-45deg);
 }
 .footer-copirates {
     font-weight: 400;
