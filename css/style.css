@@ -263,6 +263,8 @@ textarea,
 button {
     transition: all .15s linear;
 }
+
+/* --- HEADER START --- */
 .header {
     padding: 27px 0;
     position: fixed;
@@ -287,6 +289,65 @@ button {
 .header .header-nav li + li {
     margin-left: 32px;
 }
+/* --- HEADER END --- */
+
+/* --- FOOTER START --- */
+.footer {
+    padding-top: 140px;
+    padding-bottom: 60px;
+}
+.footer-img {
+    display: inline-block;
+    margin-bottom: 24px;
+}
+.footer-socials-nav {
+    padding: 5px 0;
+    margin-bottom: 110px;
+}
+.footer-socials-nav li {
+    display: inline-block;
+    margin: 0 7px;
+}
+.footer-socials-nav a:hover {
+    color: #f8f8f8;
+    background-color: #111;
+}
+.footer-copirates {
+    font-weight: 400;
+}
+.footer-copirates a {
+    display: block;
+    font-family: 'Dosis', sans-serif;
+    font-size: 12px;
+    letter-spacing: .5em;
+    text-transform: uppercase;
+    color: #111;
+    margin-bottom: 15px;
+}
+.footer-copirates span {
+    font-size: 11px;
+    color: #999;
+}
+/* --- FOOTER END --- */
+
+/* --- TOP CONTROL START --- */
+.top-control {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    color: #c6c6c6;
+    font-size: 48px;
+}
+.top-control a {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    line-height: 40px;
+}
+.top-control a:hover {
+    color: #272727;
+}
+/* --- TOP CONTROL END --- */
 /* ===== DEFAULT COMPONENTS END ===== */
 
 /* ===== CUSTOM STYLES START ===== */
@@ -638,65 +699,6 @@ button {
     font-size: 15px;
 }
 /* --- CONTACT END --- */
-
-/* --- FOOTER START --- */
-.footer {
-    padding-top: 140px;
-    padding-bottom: 60px;
-}
-.footer-img {
-    display: inline-block;
-    margin-bottom: 24px;
-}
-.footer-socials-nav {
-    padding: 5px 0;
-    margin-bottom: 110px;
-}
-.footer-socials-nav li {
-    display: inline-block;
-    margin: 0 7px;
-}
-.footer-socials-nav a:hover {
-    color: #f8f8f8;
-    background-color: #111;
-}
-.footer-copirates {
-    font-weight: 400;
-}
-.footer-copirates a {
-    display: block;
-    font-family: 'Dosis', sans-serif;
-    font-size: 12px;
-    letter-spacing: .5em;
-    text-transform: uppercase;
-    color: #111;
-    margin-bottom: 15px;
-}
-.footer-copirates span {
-    font-size: 11px;
-    color: #999;
-}
-/* --- FOOTER END --- */
-
-/* --- TOP CONTROL START --- */
-.top-control {
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    color: #c6c6c6;
-    font-size: 48px;
-}
-.top-control a {
-    display: inline-block;
-    width: 48px;
-    height: 48px;
-    line-height: 40px;
-}
-.top-control a:hover {
-    color: #272727;
-}
-/* --- TOP CONTROL END --- */
-
 /* ===== CUSTOM STYLES END ===== */
 
 
