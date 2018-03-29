@@ -68,12 +68,6 @@ button {
 .text-uppercase {
     text-transform: uppercase;
 }
-.bg-gray {
-    background: #f8f8f8;
-}
-.bg-black {
-    background: #111;
-}
 .m-auto {
     float: none;
     margin-left: auto;
@@ -83,6 +77,18 @@ button {
     display: block;
     content: "";
     clear: both;
+}
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+.bg-gray {
+    background: #f8f8f8;
+}
+.bg-black {
+    background: #111;
 }
 /* ===== DEFAULT CLASSES END ===== */
 
@@ -690,6 +696,10 @@ button {
 /* --- SUBSCRIBE END --- */
 
 /* --- CONTACT START --- */
+.contact-items-wrapper {
+    margin-bottom: 80px;
+    padding: 0 4px;
+}
 .contact-item-content {
     display: inline-block;
     margin-left: 14px;
@@ -711,7 +721,31 @@ button {
 .contact-item-content .contact-info {
     font-size: 15px;
 }
+.contact-form {
+    margin: 0 -5px;
+}
+.contact .form-col {
+    width: 50%;
+    float: left;
+    padding: 0 5px;
+    margin-bottom: 20px;
+}
+.contact-form .form-control + .form-control {
+    margin-top: 10px;
+}
+.contact-form .form-info {
+    line-height: 36px;
+    margin-left: 5px;
+}
+.contact-form .btn {
+    margin-right: 5px;
+}
 /* --- CONTACT END --- */
+
+/* --- WHERE-WE-ARE START --- */
+
+/* --- WHERE-WE-ARE END --- */
+
 /* ===== CUSTOM STYLES END ===== */
 
 
