@@ -347,6 +347,7 @@ textarea.form-control {
     font-size: 48px;
     line-height: 40px;
     opacity: 0;
+    z-index: 99;
 }
 .top-control:hover {
     cursor: pointer;
@@ -423,8 +424,9 @@ textarea.form-control {
     padding: 40px;
     background-color: #000;
     opacity: 0;
+    transition: all .35s ease-out;
 }
-.about-team .team-workers-skills span {
+.about-team .team-workers-skills .title {
     display: inline-block;
     font-size: 18px;
     letter-spacing: .3em;
@@ -432,12 +434,57 @@ textarea.form-control {
 }
 .about-team .team-workers-skills p {
     font-size: 13px;
+    font-weight: 400;
     line-height: 1.6153;
     color: rgba(255, 255, 255, .5);
     margin-bottom: 45px;
 }
 .about-team .team-workers-img:hover .team-workers-skills {
     opacity: 100;
+}
+.about-team .skill-item + .skill-item {
+    margin-top: 20px;
+}
+.about-team .skill-item span {
+    display: inline-block;
+    color: rgba(255, 255, 255, .9);
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+.about-team .skill-item .progress-bar {
+    width: 100%;
+    height: 12px;
+    background-color: rgba(255, 255, 255, .15);
+}
+.about-team .skill-item .progress {
+    width: 0;
+    height: 12px;
+    background-color: rgba(255, 255, 255, .75);
+    transition: width .5s ease-out;
+}
+.about-team .skill-item .progress.two {
+    transition: width .5s ease-out .1s;
+}
+.about-team .skill-item .progress.three {
+    transition: width .5s ease-out .2s;
+}
+.about-team .skill-item .progress.four {
+    transition: width .5s ease-out .3s;
+}
+.about-team .team-workers-img:hover .progress.one {
+    width: 74%;
+}
+.about-team .team-workers-img:hover .progress.two {
+    width: 43%;
+}
+.about-team .team-workers-img:hover .progress.three {
+    width: 85%;
+}
+.about-team .team-workers-img:hover .progress.four {
+    width: 30%;
 }
 .about-team .team-workers-info span {
     display: block;
@@ -807,7 +854,6 @@ input,
 button,
 textarea,
 .hover-anim,
-.team-workers-skills,
 .portfolio .tab-items-img,
 .reviews-slider .slick-arrow,
 .latest-news .news-items .news-img {
