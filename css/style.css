@@ -209,7 +209,7 @@ textarea.form-control {
     letter-spacing: .2em;
 }
 .btn.btn-default:hover {
-    background-color: #d1d1d1;
+    background-color: #fff;
 }
 .btn.btn-black {
     color: #fff;
@@ -221,6 +221,9 @@ textarea.form-control {
 .btn.btn-sm {
     padding: 7px 15px;
     font-size: 11px;
+}
+.btn.btn-sm:hover {
+    background-color: #d5d5d5;
 }
 .item-et-icon {
     display: block;
@@ -263,19 +266,12 @@ textarea.form-control {
     background-color: #f8f8f8;
     color: #111;
 }
-a, 
-input, 
-textarea, 
-button {
-    transition: all .15s linear;
-}
-
 /* --- HEADER START --- */
 .header {
-    padding: 27px 0;
     position: fixed;
-    width: 100%;
     top: 0;
+    width: 100%;
+    padding: 27px 0;
     z-index: 99;
 }
 .header .header-logo {
@@ -341,16 +337,15 @@ button {
     position: fixed;
     bottom: 20px;
     right: 30px;
-    color: #c6c6c6;
-    font-size: 48px;
-}
-.top-control a {
-    display: inline-block;
     width: 48px;
     height: 48px;
+    color: #c6c6c6;
+    font-size: 48px;
     line-height: 40px;
+    opacity: 0;
 }
-.top-control a:hover {
+.top-control:hover {
+    cursor: pointer;
     color: #272727;
 }
 /* --- TOP CONTROL END --- */
@@ -388,6 +383,20 @@ button {
     font-size: 19px;
     color: rgba(255, 255, 255, .68);
 }
+.inner-scroll-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 35px;
+    margin-left: -10px;
+    cursor: pointer;
+}
+.inner-scroll-btn:hover {
+    background-color: #e5e5e5;
+}
+.inner-scroll-btn .fa {
+    font-size: 9px;
+    margin-left: 2px;
+}
 /* --- INNER END --- */
 
 /* --- ABOUT TEAM START --- */
@@ -409,7 +418,6 @@ button {
     height: 100%;
     padding: 40px;
     background-color: #000;
-    transition: all .3s linear;
     opacity: 0;
 }
 .about-team .team-workers-skills span {
@@ -516,7 +524,6 @@ button {
     width: 33.3333333%;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
-    transition: all .3s linear;
 }
 .portfolio .tab-items-img:hover {
     -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
@@ -580,7 +587,6 @@ button {
     width: 90px;
     z-index: 1;
     cursor: pointer;
-    transition: all .3s linear;
 }
 .reviews-slider .slick-arrow:hover {
     background-color: rgba(255, 255, 255, .1);
@@ -637,6 +643,9 @@ button {
     background-color: rgba(255, 255, 255, .8);
     cursor: pointer;
 }
+.reviews-slider .slick-dots li:hover {
+    background-color: #fff;
+}
 .reviews-slider .slick-dots li.slick-active {
     border-color: rgba(255, 255, 255, .8);
     background-color: #000;
@@ -662,7 +671,6 @@ button {
     margin-bottom: 30px;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
-    transition: all .3s linear;
 }
 .latest-news .news-items .news-img:hover {
     -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
@@ -745,6 +753,20 @@ button {
 /* --- WHERE-WE-ARE START --- */
 
 /* --- WHERE-WE-ARE END --- */
+
+/* --- HOVER EFFECTS START --- */
+a, 
+input, 
+button,
+textarea,
+.hover-anim,
+.team-workers-skills,
+.portfolio .tab-items-img,
+.reviews-slider .slick-arrow,
+.latest-news .news-items .news-img {
+    transition: all .2s linear;
+}
+/* --- HOVER EFFECTS END --- */
 
 /* ===== CUSTOM STYLES END ===== */
 

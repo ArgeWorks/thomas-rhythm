@@ -29,17 +29,18 @@
             </div>
             <!-- /header-logo -->
             <ul class="header-nav text-uppercase">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" data-scroll=".inner">Home</a></li>
+                <li><a href="#" data-scroll=".about-team">About</a></li>
+                <li><a href="#" data-scroll=".services">Services</a></li>
+                <li><a href="#" data-scroll=".portfolio">Works</a></li>
+                <li><a href="#" data-scroll=".contact">Contact</a></li>
             </ul>
             <!-- /header-nav -->
         </div>
         <!-- /container-fluid -->
     </div>
     <!-- HEADER END -->
+
     <!-- MAIN START -->
     <div class="main">
         <!-- INNER -->
@@ -49,7 +50,10 @@
                 <span>Extraordinary art director & creative minimalism lover</span>
             </div>
             <!-- /inner-content -->
-            <!-- add inner-button -->
+            <div class="inner-scroll-btn rhomb-icon icon-white icon-sm hover-anim" data-scroll=".about-team">
+                <i class="fa fa-chevron-down"></i>
+            </div>
+            <!-- /inner-scroll-btn -->
         </div>
         <!-- ABOUT-TEAM -->
         <div class="about-team default-section border-bottom">
@@ -770,6 +774,7 @@
         </div>
     </div>
     <!-- MAIN END -->
+    
     <!-- FOOTER START -->
     <div class="footer bg-gray text-center">
         <a href="#" class="footer-img">
@@ -812,10 +817,8 @@
     <!-- FOOTER END -->
 
     <!-- TOP-CONTROL -->
-    <div class="top-control text-center">
-        <a href="#" class="go-to-top">
-            <i class="fa fa-caret-up" aria-hidden="true"></i>
-        </a>
+    <div class="top-control text-center" data-scroll=".inner">
+        <i class="fa fa-caret-up" aria-hidden="true"></i>
     </div>
 
     <!-- jQuery -->
@@ -824,6 +827,12 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <!-- Slick Slider -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Show header on scroll -->
+    <script src="js/header-scroll.js"></script>
+    <!-- Scroll to -->
+    <script src="js/scroll-to.js"></script>
+    <!-- Hide Top-Control on top -->
+    <script src="js/top-control.js"></script>
     <!-- Init Plugins -->
     <script src="js/init.js"></script>
 </body>

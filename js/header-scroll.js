@@ -1,35 +1,28 @@
 ;(function($) {
 	// Header on scroll
-	const header = $('.header');
+    const header = $('.header');
 
 	const windowHeight = $(window).height();
-	const headerHeight = header.outerHeight();
+    const headerHeight = header.outerHeight();
 
 	function onScroll(e) {
 	    let pos = $(window).scrollTop();
 
-	    if (pos > headerHeight + 100) {
+	    if (pos > 1) {
 	        header.css({
-	            'position': 'fixed',
-	            'top' : `-${headerHeight}px`,
-	            'background': '#000'
-	        });
-	    }
-	    if (pos > windowHeight) {
-	        header.css({
-	            'top' : '0',
-	            'transition' : 'top .3s ease-out'
-	        });
+                'padding': '20px 0',
+                'background': 'rgba(0, 0, 0, .85)',
+                'transition': 'all .3s',
+            });
+            
 	    }
 
-	    if (pos < headerHeight + 100) {
+	    if (pos < headerHeight) {
 	        header.css({
-	            'position': 'absolute',
-	            'top' : '0',
+                'padding': '27px 0',
 	            'background': 'transparent',
-	            'transition' : 'none'
 	        });
-	    }
+        }
 	}
 
 	$(window).on('scroll', onScroll);
