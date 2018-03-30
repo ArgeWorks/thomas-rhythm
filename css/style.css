@@ -792,7 +792,7 @@ textarea.form-control {
     letter-spacing: .3em;
     vertical-align: middle;
 }
-.where-we-are .map-glass-content i {
+.where-we-are .map-glass-content .title i {
     font-size: 10px;
 }
 .where-we-are:hover .map-glass {
