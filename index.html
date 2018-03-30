@@ -769,12 +769,27 @@
             <!-- /container -->
         </div>
         <!-- WHERE-WE-ARE -->
-        <div class="where-we-are small-section bg-black">
-            <!-- under development... -->
+        <div class="where-we-are bg-black">
+            <div id="map"></div>
+            <div class="map-glass text-center hover-anim">
+                <div class="map-glass-content hover-anim">
+                    <div class="rhomb-icon icon-white icon-lg">
+                        <i class="fa fa-map-marker"></i>
+                    </div>
+                    <!-- /rhomb-icon -->
+                    <div class="title">
+                        <span>Open the map </span>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <!-- /title -->
+                </div>
+                <!-- /map-glass-content -->
+            </div>
+            <!-- /map-glass -->
         </div>
     </div>
     <!-- MAIN END -->
-    
+
     <!-- FOOTER START -->
     <div class="footer bg-gray text-center">
         <a href="#" class="footer-img">
@@ -827,7 +842,11 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <!-- Slick Slider -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <!-- Show header on scroll -->
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCc0AENSaghap1ryUkNSceTmlnayTVXp1s&callback=initMap" async defer></script>
+    <!-- Init Google Map -->
+    <script src="js/google-maps.js"></script>
+    <!-- Show Header on scroll -->
     <script src="js/header-scroll.js"></script>
     <!-- Scroll to -->
     <script src="js/scroll-to.js"></script>

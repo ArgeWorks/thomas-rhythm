@@ -21,8 +21,8 @@ function initMap() {
         let myLatlng = new google.maps.LatLng(49.982521, 36.246361);
 
         // Add your company name and some text about company
-        let maptooltipbold = 'EasyCode';
-        let maptooltip = 'IT курсы';
+        let maptooltipbold = 'Ритмичный Томас';
+        let maptooltip = 'Добро пожаловать!';
 
 
         //---------------------------------------------------------//
