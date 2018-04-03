@@ -14,4 +14,10 @@ $( function() {
         autoplay: true,
         autoplaySpeed: 5000
     });
+
+    // Init Slick Nav
+    $(".header-nav").slicknav({
+        appendTo: ".header .container-fluid",
+        label: "",
+    });
 });
