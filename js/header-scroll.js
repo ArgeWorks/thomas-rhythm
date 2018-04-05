@@ -1,31 +1,39 @@
 ;(function($) {
-	// Header on scroll
+    // Header on scroll
     const header = $('.header');
 
-	const windowHeight = $(window).height();
+    const windowHeight = $(window).height();
     const headerHeight = header.outerHeight();
 
-	function onScroll(e) {
-	    let pos = $(window).scrollTop();
+    function onScroll(e) {
+        let pos = $(window).scrollTop();
 
-	    if (pos > 1) {
-	        // header.css({
-            //     'padding': '20px 0',
-            //     'background': '#000',
-            //     'transition': 'all .3s',
-            // });
+        if (pos > 1) {
             $(".header").addClass("header-min")
-	    }
-
-	    if (pos < headerHeight) {
-	        // header.css({
-            //     'padding': '27px 0',
-	        //     'background': 'transparent',
-            // });
-            $(".header").removeClass("header-min")
+            $(".slicknav_nav").css({
+                'top': '32px',
+                'background-color': '#000',
+                'border-color': '#777',
+            });
+            $(".slicknav_nav li + li").css({
+                'border-color': '#777',
+            });
         }
-	}
 
-	$(window).on('scroll', onScroll);
+        if (pos < headerHeight) {
+            $(".header").removeClass("header-min")
+            $(".slicknav_nav").css({
+                'top': '41px',
+                'background-color': 'transparent',
+                'border-color': '#bbb',
+            });
+            $(".slicknav_nav li + li").css({
+                'border-color': '#bbb',
+            });
+        }
+    }
+
+    $(window).on('scroll', onScroll);
+    $(window).on('load', onScroll);
 
 })(jQuery);
