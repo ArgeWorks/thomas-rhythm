@@ -24,7 +24,7 @@
             $(".header").removeClass("header-min")
             $(".slicknav_nav").css({
                 'top': '41px',
-                'background-color': 'transparent',
+                'background-color': '#a0a0a0',
                 'border-color': '#bbb',
             });
             $(".slicknav_nav li + li").css({

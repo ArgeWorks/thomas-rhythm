@@ -98,15 +98,15 @@ button {
 /* ===== DEFAULT CLASSES END ===== */
 
 /* ===== DEFAULT COMPONENTS START ===== */
-.default-section {
+.default-section,
+.content-section {
     padding: 135px 0;
+}
+.default-section-pt {
+    padding-top: 135px;
 }
 .small-section {
     padding: 70px 0;
-}
-.default-section.border-bottom,
-.small-section.border-bottom {
-    border-bottom: 1px solid #ececec;
 }
 .container {
     max-width: 1200px;
@@ -140,6 +140,9 @@ button {
     font-size: 15px;
     line-height: 1.7333;
     font-weight: 300;
+}
+.br-bottom {
+    border-bottom: 1px solid #ececec;
 }
 blockquote,
 .blockquote {
@@ -273,8 +276,12 @@ textarea.form-control {
     color: #111;
 }
 @media (max-width: 991px) {
-    .default-section {
-        padding: 70px 0;
+    .default-section,
+    .content-section {
+        padding: 80px 0;
+    }
+    .default-section-pt {
+        padding-top: 70px;
     }
     .small-section {
         padding: 40px 0;
@@ -286,14 +293,33 @@ textarea.form-control {
     .blockquote {
         font-size: 22px;
     }
+    blockquote span,
+    .blockquote span {
+        font-size: 9px;
+    }
     .item-et-icon {
         font-size: 40px;
         margin-bottom: 20px;
     }
 }
 @media (max-width: 767px) {
+    .title.section-title,
+    .title.section-title-light {
+        font-size: 15px;
+    }
+    blockquote,
+    .blockquote {
+        font-size: 20px;
+    }
     .default-text {
+        font-size: 15px;
+    }
+    .btn,
+    .form-control {
         font-size: 14px;
+    }
+    .btn.btn-sm {
+        font-size: 12px;
     }
 }
 @media (max-width: 576px) {
@@ -308,9 +334,16 @@ textarea.form-control {
     .title.section-title-light {
         letter-spacing: .2em;
     }
+    .default-text {
+        font-size: 15px;
+    }
     blockquote,
     .blockquote {
-        font-size: 18px;
+        font-size: 22px;
+    }
+    blockquote span,
+    .blockquote span {
+        font-size: 11px;
     }
     .item-et-icon {
         font-size: 35px;
@@ -380,8 +413,8 @@ textarea.form-control {
 
 /* --- FOOTER START --- */
 .footer {
-    padding-top: 140px;
-    padding-bottom: 60px;
+    padding-top: 135px;
+    padding-bottom: 50px;
 }
 .footer-img {
     display: inline-block;
@@ -533,7 +566,7 @@ textarea.form-control {
 .about-team .team-worker-img {
     margin-bottom: 28px;
     position: relative;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
 .about-team .team-worker-skills {
@@ -661,6 +694,13 @@ textarea.form-control {
     .about-team .team-worker-img img {
         width: 100%;
     }
+    .about-team .team-worker-name {
+        margin-bottom: 10px;
+        font-size: 11px;
+    }
+    .about-team .team-worker-role {
+        font-size: 9px;
+    }
 }
 @media (max-width: 576px) {
     .about-team .team-worker-skills {
@@ -670,7 +710,6 @@ textarea.form-control {
         width: 80%;
     }
     .about-team .team-worker-name {
-        margin-bottom: 10px;
         font-size: 13px;
     }
     .about-team .team-worker-role {
@@ -706,7 +745,7 @@ textarea.form-control {
 }
 @media (max-width: 991px) {
     .tabs-nav {
-        margin-bottom: 55px;
+        margin-bottom: 50px;
     }
     .services .tabs-nav .tab-name {
         font-size: 12px;
@@ -719,7 +758,7 @@ textarea.form-control {
     }
     .services .tabs-nav li {
         width: 33.33333333%;
-        margin-bottom: 55px;
+        margin-bottom: 50px;
     }
 }
 @media (max-width: 576px) {
@@ -737,9 +776,6 @@ textarea.form-control {
 /* --- SERVICES END --- */
 
 /* --- LETS TALK START --- */
-.lets-talk-content {
-    padding: 140px 0;
-}
 .lets-talk-content p {
     color: rgba(255, 255, 255, .7);
     margin-bottom: 40px;
@@ -747,17 +783,9 @@ textarea.form-control {
 .lets-talk-img {
     margin-top: -32px;
 }
-@media (max-width: 991px) {
-    .lets-talk-content {
-        padding: 60px 0;
-    }
-}
 /* --- LETS TALK END --- */
 
 /* --- PORTFOLIO START --- */
-.portfolio {
-    padding-top: 135px;
-}
 .portfolio-desc-wrapper {
     max-width: 1200px;
     padding: 0 15px;
@@ -788,20 +816,17 @@ textarea.form-control {
     float: left;
     padding: 4px;
     width: 33.3333333%;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
 .portfolio .tab-items-img:hover {
-    -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(0);
     filter: grayscale(0);
 }
 .portfolio .tab-items-img img {
     width: 100%;
 }
 @media (max-width: 991px) {
-    .portfolio {
-        padding-top: 70px;
-    }
     .portfolio-desc-wrapper {
         margin-bottom: 50px;
     }
@@ -835,7 +860,7 @@ textarea.form-control {
 .why-choose-us .section-title {
     margin-bottom: 0;
 }
-.why-choose-items-wrapper span {
+.why-choose-items-wrapper .title {
     display: block;
     font-size: 14px;
     font-weight: 400;
@@ -844,6 +869,11 @@ textarea.form-control {
 }
 .why-choose-us .col {
     margin-top: 80px;
+}
+@media (max-width: 576px) {
+    .why-choose-items-wrapper .title {
+        letter-spacing: .2em;
+    }
 }
 /* --- WHY CHOOSE US END --- */
 
@@ -981,11 +1011,11 @@ textarea.form-control {
 .latest-news .news-items .news-img {
     display: inline-block;
     margin-bottom: 30px;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
 .latest-news .news-items .news-img:hover {
-    -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(0);
     filter: grayscale(0);
 }
 .latest-news .news-items .news-title {
@@ -1006,7 +1036,7 @@ textarea.form-control {
 }
 @media (max-width: 991px) {
     .latest-news .news-items .col {
-        border-bottom: 2px solid #e6e6e6;
+        border-bottom: 1px solid #e6e6e6;
         padding-bottom: 20px;
     }
     .latest-news .news-items .col-md-12 + .col-md-12 {
