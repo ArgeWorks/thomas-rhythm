@@ -73,22 +73,25 @@ button {
     margin-left: auto;
     margin-right: auto;
 }
-.clearfix::after {
-    display: block;
-    content: "";
-    clear: both;
-}
 .pull-left {
     float: left;
 }
 .pull-right {
     float: right;
 }
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
 .bg-gray {
     background: #f8f8f8;
 }
 .bg-black {
     background: #111;
+}
+.br-bottom {
+    border-bottom: 1px solid #ececec;
 }
 @media (max-width: 991px) {
     .text-md-center {
@@ -102,7 +105,7 @@ button {
 .content-section {
     padding: 135px 0;
 }
-.default-section-pt {
+.default-section-p-top {
     padding-top: 135px;
 }
 .small-section {
@@ -140,9 +143,6 @@ button {
     font-size: 15px;
     line-height: 1.7333;
     font-weight: 300;
-}
-.br-bottom {
-    border-bottom: 1px solid #ececec;
 }
 blockquote,
 .blockquote {
