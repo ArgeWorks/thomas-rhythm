@@ -52,14 +52,14 @@ _**Компоненты**_
 ```
     .title 
     .title.title-white
-	.title.section-title
-	.title.section-title-light
+    .title.section-title
+    .title.section-title-light
 ```
 
 5.  Стилизация текста:
 ```
     .default-text
-	.blockquote
+    .blockquote
 ```
 
 6.  Стилизация форм:
@@ -71,8 +71,8 @@ _**Компоненты**_
 ```
     .btn
     .btn.btn-sm
-	.btn.btn-default
-	.btn.btn-black
+    .btn.btn-default
+    .btn.btn-black
 ```
 
 8.  Стилизация ET-Line иконок:
@@ -133,18 +133,18 @@ _**Классы**_
 ```
 8.  Скрываем элементы на определенных разрешениях:
 ```
-	.d-lg-none
-	.d-md-none
-	.d-sm-none
-	.d-xs-none
+    .d-lg-none
+    .d-md-none
+    .d-sm-none
+    .d-xs-none
 ```
 
 _**Основные контрольные точки media-запросов:**_
 ```
-	@media (max-width: 1200px) - устройства c разрешением до 1200px.
-	@media (max-width: 991px) - устройства c разрешением до 991px.
-	@media (max-width: 767px) - устройства c разрешением до 767px.
-	@media (max-width: 576px) - мобильные устройства c разрешением до 576px.
+    @media (max-width: 1200px) - устройства c разрешением до 1200px.
+    @media (max-width: 991px) - устройства c разрешением до 991px.
+    @media (max-width: 767px) - устройства c разрешением до 767px.
+    @media (max-width: 576px) - мобильные устройства c разрешением до 576px.
 ```
 
 ### Структура папок
