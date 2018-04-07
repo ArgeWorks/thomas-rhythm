@@ -8,10 +8,11 @@
 1.  jQuery UI - стилизация табов.
 2.  Slick Slider - стилизация карусели.
 3.  Slick Nav - стилизация мобильного меню.
-4.  Google Maps API - стилизация карт от Google.
-5.  Header Scroll - изменение хедера при скролле.
-6.  Scroll to - плавный переход по секциям.
-7. Hide Top-Control - скрывает кнопку to top на позиции иннера.
+4.  Lightbox - стилизация лайтбоксов.
+5.  Google Maps API - стилизация карт от Google.
+6.  Header Scroll - изменение хедера при скролле.
+7.  Scroll to - плавный переход по секциям.
+8.  Hide Top-Control - скрывает кнопку to top на позиции иннера.
 
 ### Иконки:
 1.  ET-Line - иконочный шрифт.
