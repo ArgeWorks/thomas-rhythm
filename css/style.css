@@ -520,7 +520,7 @@ textarea.form-control {
 .inner-scroll-btn {
     position: absolute;
     left: 50%;
-    bottom: 35px;
+    bottom: 4%;
     margin-left: -10px;
     cursor: pointer;
 }
